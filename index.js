@@ -34,7 +34,7 @@ wss.on('connection', function connection(ws) {
             if (client.readyState === WebSocket.OPEN) {
 
                 console.log("message",message.toString())
-                client.send(`client ${index + 1}: ${message.toString()} `);
+                client.send(`${message.toString()} `);
             }
         });
     });
@@ -48,7 +48,7 @@ wss.on('connection', function connection(ws) {
     });
 
     // Send a welcome message on new connection
-    ws.send('Welcome to the chat info cc!');
+    ws.send('Welcome to the chat App with websocket!');
 });
 
 // Start the server
