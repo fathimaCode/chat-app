@@ -1,13 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
-::root{
+:root{
   --white-color:#ffff;  
   --black-color:#000000;
+  --grey-color: #afabab;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     font-family: "Playwrite GB S", cursive;
+}
+.main_container,.header{
+    border-radius: 25px;
+}
+.main_container{
+    margin: 8% auto;
+    display: flex;
+    border: 1px solid var(--black-color);
+    height: 500px;
+    width: 400px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.header{
+    height: 60px;
+    width: 100%;
+    background-color: var(--grey-color);
+}
+.message_container{
+
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    margin: 5px;
+   
+}
+.send_message{
+ display: flex;
+}
+.input_message{
+    padding: 10px;
+    width: 75%;
+    margin: 10px;
+    border-radius: 10px;
+}
+#btnSend{
+    cursor: pointer;
+    font-size: 1.8em;
+    align-items: center;
+    margin-top: 10px;
+}
+.username{
+    margin: 5px 15px;
+    color: var(--white-color);
+    font-size: 1.2em;
+    width: 80%;
+    height: 80%;
+    border: none;
+    background-color: var(--grey-color);
+}
+.username:focus{
+    outline-width: 0;
 }

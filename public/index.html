@@ -3,16 +3,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat App </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main_container">
+        <div class="header">
+            <input type="text" class="username" id="username">
+        </div>
+        <div class="message_container" id="message_container">
 
-
+        </div>
+        <div class="send_message">
+            <input type="text" placeholder="Type Here" class="input_message" id="message">
+            <i class="ri-send-plane-fill" id="btnSend"></i>
+           
+            
+        </div>
     </div>
     <span id="clientTotal"></span>
-    <input type="text" placeholder="message" id="message">
-    <button id="btnSend">Send</button>
+   
     <script src="/socket.io/socket.io.js"></script>
     <script src="main.js"></script>
 </body>
