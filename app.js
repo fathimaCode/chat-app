@@ -10,7 +10,7 @@ const clients = []
 
 app.use(express.static(path.join(__dirname,"client")));
 const mywebSocket = new WebSocket.Server({server});
-const chatList = []
+
 mywebSocket.on('connection',(ws)=>{
     clients.push(ws)
     
